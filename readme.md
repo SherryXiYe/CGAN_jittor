@@ -1,15 +1,20 @@
-## 第三届计图人工智能挑战赛
+## Conditional GAN生成数字图像
 
-### 计图挑战热身赛
+### 简介
+本项目包含了第三届计图人工智能挑战赛 - 热身赛的代码实现。本项目根据提供的数字图片数据集 MNIST，训练了一个将随机噪声和类别标签映射为数字图片的Conditional GAN模型，并生成了比赛页面指定数字序列`13845631383409`。
 
-本赛题将会提供数字图片数据集 MNIST，参赛选手需要训练一个将随机噪声和类别标签映射为数字图片的Conditional GAN模型，并生成比赛页面指定数字序列。
+### 运行环境
+* Windows 10 
+* python >= 3.8 
+* jittor >= 1.3.7
 
-本赛题提供示例代码框架，提供数据下载、模型定义、训练步骤等功能。
-
-选手可以基于示例代码填充注释为 TODO 的部分完成该赛题。
-
+### 运行方法
 ```
-修改 CGAN.py 
 python CGAN.py
-使其运行
 ```
+
+### 结果展示
+![result.png](result.png)
+
+### 参考文献
+此项目基于论文 Conditional Generative Adversarial Nets 实现，部分代码参考参考了框架代码 [jittor-gan](https://data.educoder.net/api/attachments/5149654)。
